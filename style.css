@@ -1,0 +1,64 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    background-color:lightseagreen;
+    font-family:helvetica,sans-serif;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.board{
+    height:320px;
+    width: 320px;
+    background-image:url(grid.png);
+    background-size: cover;
+    border-radius: 3rem;
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows: repeat(3,1fr);
+  
+}
+
+
+.board:hover{
+    cursor:pointer;
+    box-shadow:10px 5px 5px skyblue;
+}
+
+.circle{
+    background-image:url(circle.png);
+}
+
+.cross{
+    background-image:url(cross.png);
+}
+ .cross,
+ .circle{
+background-size:80%;
+background-position:center;
+background-repeat: no-repeat;
+
+ }
+
+ #result{ 
+    text-align:center;
+    width:500px;
+    color:white;
+ }
+
+ #restart {
+    background-color: yellowgreen;
+    border-radius: 20%;
+    margin-top:30px;
+ }
+ button:hover{
+    cursor: pointer;
+    color:red;
+ }
